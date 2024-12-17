@@ -1,3 +1,62 @@
 body{
-    background:grey;
+    background:#E8E6E3;
+}
+h1{
+    font-size: 30px;
+    position:relative;
+    bottom:15px;
+}
+h2{
+    color:#292929;
+}
+footer{
+    text-align: center;
+    padding:10px;
+}
+.date{
+    color:black;
+}
+.time{
+    font-size: 30px;
+    padding:20px;
+    font-weight: 900;
+    position: relative;
+    top: 30px;
+}
+.logo-name{
+    color:#758DA8;
+    font-size: 24px;
+}
+.clock-logo{
+    font-size: 30px;
+}
+.container{
+    background:#FEFEFF ;
+    width:500px;
+    margin:50px auto;
+    padding:30px;
+}
+.choose-city{
+    width:100%;
+    padding:10px 15px;
+}
+.hero-section{
+    display:flex;
+    justify-content: space-between;
+}
+.line{
+    border-style:dashed;
+    color:#8BA3C9;
+}
+.cities-section{
+    display:flex;
+    justify-content: space-between;
+}
+.inner-cities-section{
+    padding:20px;
+}
+.time-unit{
+    font-size: 10px;
+    position: relative;
+    bottom:10px;
 }
