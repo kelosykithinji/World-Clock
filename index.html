@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Clock</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment-timezone-with-data-1970-2030.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -17,23 +19,23 @@
             </div>
         </header>
         <main>
-            <select class="choose-city">
+            <select class="choose-city" id="choose-city">
                 <option value="" >Choose city</option>
-                <option value="">Los angeles</option>
-                <option value="">Sydney</option>
-                <option value="">Tokyo</option>
-                <option value="">Paris</option>
+                <option value="America/Los_Angeles">Los angeles</option>
+                <option value="Australia/Sydney">Sydney</option>
+                <option value="Asia/Tokyo">Tokyo</option>
+                <option value="Europe/Paris">Paris</option>
             </select>
-            <div>
-                <div class="cities-section">
+            <div id="different-cities">
+                <div class="cities-section" id="los-angeles">
                     <div class="inner-cities-section">
                         <h2>Los angeles 🏳‍🌈</h2>
-                        <div class="date">August 15th 2022</div>
+                        <div class="date" >August 15th 2022</div>
                     </div>
                     <div class="time">1:48:15 <span class="time-unit">AM</span></div>
                 </div>
                 <hr class="line">
-                <div class="cities-section">
+                <div class="cities-section" id="Sydney">
                     <div class="inner-cities-section">
                         <h2>Sydney 🏴‍☠️</h2>
                         <div class="date">August 15th 2022</div>
@@ -41,7 +43,7 @@
                     <div class="time">1:48:15 <span class="time-unit">AM</span></div>
                 </div>
                 <hr class="line">
-                <div class="cities-section">
+                <div class="cities-section" id="Tokyo">
                     <div class="inner-cities-section">
                         <h2>Tokyo🏴</h2>
                         <div class="date">August 15th 2022</div>
@@ -50,8 +52,8 @@
                     
                 </div>
                 <hr class="line">
-                <div class="cities-section">
-                    <div class="inner-cities-section">
+                <div class="cities-section" id="Paris">
+                    <div class="inner-cities-section" >
                         <h2>Paris 🏳‍🌈</h2>
                         <div class="date">August 15th 2022</div>
                     </div>
