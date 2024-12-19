@@ -8,7 +8,7 @@ function changeDate(event){
 
           let losAngeleseTime = document.querySelector("#los-angeles .time");
           losAngeleseTime.innerHTML = moment()
-            .tz(event.target.value)
+            .tz("America/Los_Angeles")
             .format("h:mm:ss A");
         }
     //Sydney
@@ -20,7 +20,7 @@ function changeDate(event){
 
       let sydneyTime = document.querySelector("#Sydney .time");
       sydneyTime.innerHTML = moment()
-        .tz(event.target.value)
+        .tz("Australia/Sydney")
         .format("h:mm:ss A");
     }
 
@@ -32,9 +32,7 @@ function changeDate(event){
         tokyoElement.innerHTML = moment().format("MMMM Do YYYY");
 
         let tokyoTime = document.querySelector("#Tokyo .time");
-        tokyoTime.innerHTML = moment()
-          .tz(event.target.value)
-          .format("h:mm:ss A");
+        tokyoTime.innerHTML = moment().tz("Asia/Tokyo").format("h:mm:ss A");
       } 
     //paris
     
@@ -44,9 +42,7 @@ function changeDate(event){
         parisElement.innerHTML = moment().format("MMMM Do YYYY");
 
         let parisTime = document.querySelector("#Paris .time");
-        parisTime.innerHTML = moment()
-          .tz(event.target.value)
-          .format("h:mm:ss A");
+        parisTime.innerHTML = moment().tz("Europe/Paris").format("h:mm:ss A");
       }
 }
 
