@@ -45,8 +45,8 @@ function changeDate(event){
         parisTime.innerHTML = moment().tz("Europe/Paris").format("h:mm:ss A");
       }
 }
-
-
+//this sets the seconds to update every second
+setInterval(changeDate, 1000);
 
 let chooseCities = document.querySelector("#choose-city");
 chooseCities.addEventListener("change", changeDate);
