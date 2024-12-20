@@ -50,7 +50,7 @@ console.log()
         let parisTime = document.querySelector("#Paris .time");
         parisTime.innerHTML = moment().tz("Europe/Paris").format("h:mm:ss A");
       }
-}
+};
 //this sets the seconds to update every second
 
 
@@ -69,8 +69,10 @@ function displayCity(event) {
         <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
       </div>
       <div class="time"> ${cityTime.format("h:mm:ss A")}
-    </div>`;
-}
+    </div> `;
+  //you could use <a href="/">Go back to all cities</a>
+  //to go back to the all cities page too
+};
 
 setInterval(changeDate, 1000);
 changeDate();
