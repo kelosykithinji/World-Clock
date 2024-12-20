@@ -47,6 +47,26 @@ function changeDate(event){
 }
 //this sets the seconds to update every second
 setInterval(changeDate, 1000);
+changeDate();
+
+function displayCity(event){
+  let cityTimeZone = event.target.value;
+  let cityTime = moment().tz(cityTimeZone);
+  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+
+  let differentCities = document.querySelector("#different-cities");
+  differentCities.innerHTML = `<div class="cities-section" id="los-angeles">
+      <div class="inner-cities-section">
+        <h2>${cityName}</h2>
+        <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
+      </div>
+      <div class="time"> ${cityTime.format(
+        "h:mm:ss A"
+      )}<span class="time-unit"></span></div>
+    </div>`;
+
+
+}
 
 let chooseCities = document.querySelector("#choose-city");
-chooseCities.addEventListener("change", changeDate);
+chooseCities.addEventListener("change", displayCity);
